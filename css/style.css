@@ -1,4 +1,4 @@
-        /* Font @ import */
+/* Font @ import */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
@@ -107,40 +107,37 @@ h1 {
     color: #2c5785;
     font-family: 'Arvo', serif;
     font-weight: 400;
-    font-size: 2.6em;
+    font-size: 2.2em;
     text-align: center;
-    line-height: 1.4em;
+    line-height: 1.6em;
 }
 
 h2 {
     color: #2c5785;
     font-family: 'Arvo', serif;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 h3 {
-    color: #2c5785;
+    color: #348abb;
     font-family: 'Arvo', serif;
     font-weight: 400;
-    font-size: 1.4em;
-    color: #348abb;
+    font-size: 1.5em;
 }
 
 h4 {
-    color: #2c5785;
+    color: #348abb;
     font-family: 'Arvo', serif;
     font-weight: 400;
-    font-size: 1em;
-    color: #348abb;
+    font-size: 1.2em;
 }
 
 h5 {
-    color: #2c5785;
+    color: #348abb;
     font-family: 'Arvo', serif;
     font-weight: 400;
     font-size: 1em;
-    color: #348abb;
     line-height: 1.3em;
 }
 
@@ -217,7 +214,7 @@ form {
     height: 1px;
     width: 100%;
     /* or 100px */
-    border-bottom: 1px solid #a9d5e8;
+    border-bottom: 1px solid #348abb;
     padding: 0px 0 4px 0;
 }
 
@@ -234,10 +231,52 @@ img {
     width: 50%;
 }
 
+.submit {
+    margin: 20px 0px 10px 0px;
+}
+.submitButton {
+    font-size: 1.1em;
+    color: #348abb;
+    font-family: 'Arvo', serif;
+    height: 40px;
+    padding: 5px 40px 5px 40px;
+    border-radius: 3px;
+    background: #ffffff; 
+    border: 1px solid #ffffff;
+    margin:auto;
+    display:block;
+    float: left;
+}
+
+.submitButton:hover {
+    background: #ffffff;
+    color: #2c5785;
+    border: 1px solid #2c5785;
+}
+
+fieldset {
+    border: 0;
+    width:100%;
+}
+
+#name,
+#email {
+    border: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.text1 {
+    width: 100%;
+    border: 0;
+    height: 200px;
+    padding: 10px 10px 10px 10px;
+}
+
 /******************************************
 /* LOCATIONS
 /*******************************************/
-
 
 #vicArea {
     display: none;
@@ -246,42 +285,44 @@ img {
 
 #albion {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
 }
 
 #epping {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
 }
 
 #hcross {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
 }
 
 #kealba {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
 }
 
 #lalor {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
+    font-size: 1em;
+    line-height: 1.3em;
 }
 
 #preston {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
 }
 
 #stAlbans {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
 }
 
 #sunWest {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 0 0 5px 5px;
 }
 
 /******************************************
