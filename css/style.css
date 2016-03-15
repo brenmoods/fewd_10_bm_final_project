@@ -218,7 +218,7 @@ form {
     width: 100%;
     /* or 100px */
     border-bottom: 1px solid #a9d5e8;
-    padding: 3px 0 5px 0;
+    padding: 0px 0 4px 0;
 }
 
 .grid,
@@ -234,12 +234,55 @@ img {
     width: 50%;
 }
 
+/******************************************
+/* LOCATIONS
+/*******************************************/
+
 
 #vicArea {
     display: none;
     padding: 0 0 10px 10px;
 }
 
+#albion {
+    display: none;
+    padding: 0 0 10px 10px;
+}
+
+#epping {
+    display: none;
+    padding: 0 0 10px 10px;
+}
+
+#hcross {
+    display: none;
+    padding: 0 0 10px 10px;
+}
+
+#kealba {
+    display: none;
+    padding: 0 0 10px 10px;
+}
+
+#lalor {
+    display: none;
+    padding: 0 0 10px 10px;
+}
+
+#preston {
+    display: none;
+    padding: 0 0 10px 10px;
+}
+
+#stAlbans {
+    display: none;
+    padding: 0 0 10px 10px;
+}
+
+#sunWest {
+    display: none;
+    padding: 0 0 10px 10px;
+}
 
 /******************************************
 /* GRID SETTING
