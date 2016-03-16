@@ -1,6 +1,6 @@
 /* Font @ import */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
 
 /* Box Model Hack */
@@ -13,7 +13,6 @@
     box-sizing: border-box;
     /* IE */
 }
-
 
 /* Clear fix hack */
 
@@ -42,7 +41,6 @@
     /* note the padding around a left floated image */
 }
 
-
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -50,7 +48,8 @@
 body {
     background-color: #ffffff;
     color: #000000;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 a {
@@ -60,7 +59,6 @@ a {
 p {
     line-height: 1.4em;
 }
-
 
 /******************************************
 /* LAYOUT
@@ -93,7 +91,12 @@ header nav ul li {
 
 header nav ul li a {
     color: #ffffff;
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav ul li a:hover {
+    color: #c3dfea;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #homeBacker {
@@ -121,24 +124,24 @@ h2 {
 
 h3 {
     color: #348abb;
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 h4 {
     color: #348abb;
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
 }
 
 h5 {
     color: #348abb;
-    font-family: 'Arvo', serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1em;
-    line-height: 1.3em;
+    font-size: 1.1em;
+    line-height: 1.2em;
 }
 
 footer {
@@ -168,18 +171,20 @@ footer p {
 #tradition p {
     font-size: 1.3em;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 #enjoy {
     background: url(../images/enjoy.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 50px 0 20px 0;
+    padding: 50px 0 40px 0;
 }
 
 #enjoy p {
     font-size: 1.2em;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 #find {
@@ -190,7 +195,8 @@ footer p {
 
 #find p {
     font-size: 1.2em;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 #contact {
@@ -199,8 +205,13 @@ footer p {
 }
 
 #contact p {
-    font-size: 1.2em;
-    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.copyright {
+        font-size: 40em;
 }
 
 form {
@@ -213,14 +224,13 @@ form {
     bottom: 0;
     height: 1px;
     width: 100%;
-    /* or 100px */
-    border-bottom: 1px solid #348abb;
-    padding: 0px 0 4px 0;
+    border-bottom: 1px solid #e4f7fd;
+    padding: 0px 4px 4px 0;
 }
 
 .grid,
 .fullwidth {
-    padding: 0 40px 0 40px;
+    padding: 0 50px 0 50px;
 }
 
 img {
@@ -249,9 +259,9 @@ img {
 }
 
 .submitButton:hover {
-    background: #ffffff;
-    color: #2c5785;
-    border: 1px solid #2c5785;
+    background: #c3dfea;
+    color: #348abb;
+    /*border: 1px solid #2c5785;*/
 }
 
 fieldset {
@@ -272,11 +282,22 @@ fieldset {
     border: 0;
     height: 200px;
     padding: 10px 10px 10px 10px;
+    resize: none;
 }
 
 /******************************************
 /* LOCATIONS
 /*******************************************/
+
+#vicArea em {
+    color: aqua;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#victoria {
+    padding: 0 0 10px 0;
+}
 
 #vicArea {
     display: none;
@@ -285,44 +306,44 @@ fieldset {
 
 #albion {
     display: none;
-    padding: 0 0 5px 5px;
+    padding: 0 0 5px 0px;
 }
 
 #epping {
     display: none;
-    padding: 0 0 5px 5px;
+    padding: 0 0 5px 0px;
 }
 
 #hcross {
     display: none;
-    padding: 0 0 5px 5px;
+    padding: 0 0 5px 0px;
 }
 
 #kealba {
     display: none;
-    padding: 0 0 5px 5px;
+    padding: 0 0 5px 0px;
 }
 
-#lalor {
+#lalor{
     display: none;
-    padding: 0 0 5px 5px;
-    font-size: 1em;
-    line-height: 1.3em;
+    padding: 0 0 5px 0px;
+    font-size: .95em;
+    line-height: 1.4em;
 }
 
 #preston {
     display: none;
-    padding: 0 0 5px 5px;
+    padding: 0 0 5px 0px;
 }
 
 #stAlbans {
     display: none;
-    padding: 0 0 5px 5px;
+    padding: 0 0 5px 0px;
 }
 
 #sunWest {
     display: none;
-    padding: 0 0 5px 5px;
+    padding: 0 0 5px 0px;
 }
 
 /******************************************
@@ -339,7 +360,7 @@ fieldset {
 }
 
 .grid > * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     /* 
      * if you are using a different base font-size then change this to be the same
      * if you don't care about ie8 you can change this to
@@ -448,7 +469,6 @@ fieldset {
     width: 91.66667%;
 }
 
-
 /******************************************
 /* SINGLE COLUMN RESPONSIVE MOBILE
 /*******************************************/
@@ -460,7 +480,8 @@ fieldset {
     .four-twelths {
         max-width: 100%;
     }
-    @media only screen and (max-width: 600px) {
+    
+@media only screen and (max-width: 600px) {
         body {
             width: 100%;
         }

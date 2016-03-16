@@ -25,6 +25,11 @@ $(document).ready(function () {
         $("#vicArea").fadeToggle();
     });
 
+     $("#victoria").click(function(){
+        $("#albion, #epping, #hcross, #kealba, #lalor, #preston, #stAlbans, #sunWest").fadeOut();
+    });
+    
+    
     //on click id albion
     $("#albionClick").click(function ($e) {
         //prevents default action of element - page scrolling back to top of page
