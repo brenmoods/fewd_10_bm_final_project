@@ -1,6 +1,6 @@
 /* Font @ import */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
 
 /* Box Model Hack */
@@ -80,12 +80,12 @@ header .logo {
 }
 
 header nav {
-    float: right;
+    float: left;
 }
 
 header nav ul li {
     display: inline-block;
-    margin: 0 0 0 6px;
+    margin: 0 0 0 11px;
     font-size: 1em;
 }
 
@@ -97,6 +97,14 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #c3dfea;
     font-family: 'Open Sans', sans-serif;
+}
+
+.hamburger {
+    display: none;
+}
+
+.fixed {
+    display: inline-block;
 }
 
 #homeBacker {
@@ -137,7 +145,7 @@ h4 {
 }
 
 h5 {
-    color: #348abb;
+    color: #317811;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
@@ -178,7 +186,7 @@ footer p {
 #enjoy {
     background: url(../images/enjoy.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 50px 0 40px 0;
+    padding: 70px 0 50px 0;
 }
 
 #enjoy p {
@@ -225,12 +233,12 @@ form {
     height: 1px;
     width: 100%;
     border-bottom: 1px solid #e4f7fd;
-    padding: 0px 4px 4px 0;
+    padding: 0 4px 4px 0;
 }
 
 .grid,
 .fullwidth {
-    padding: 0 50px 0 50px;
+    padding: 0 40px 0 40px;
 }
 
 img {
@@ -242,8 +250,9 @@ img {
 }
 
 .submit {
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0 10px 0;
 }
+
 .submitButton {
     font-size: 1.1em;
     color: #348abb;
@@ -286,65 +295,173 @@ fieldset {
 }
 
 /******************************************
+/* CHEESE CHOOSER
+/*******************************************/
+
+div.wrapper{  
+    position: relative; /* important(so we can absolutely position the description div */  
+    height:100%;
+}
+
+.paddingBottom {
+    padding-bottom: 20px;
+}
+    
+.floatRight {
+    float: right;
+    right: 0px;  
+}
+
+.floatLeft {
+    float: left;
+    left: 0px;  
+}
+
+/*div.description {  
+    position:absolute; /* absolute position (so we can position it where we want) 
+  /*  top: 0px; /* position will be on bottom  
+    display: none;
+    background-color: orange; 
+}*/ 
+
+.chooseHeading {
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;  
+    padding-bottom: 8px;
+}
+
+.chooseCopy {
+    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #ffffff;  
+}
+
+div.descriptionOrange {  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: orange;  
+    padding: 40px 10px 0 10px;
+    height: 100%;
+    width: 100%;
+}  
+
+div.descriptionRed {  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: red; 
+    padding: 40px 10px 0 10px; 
+    height: 100%;
+    width: 100%;
+}  
+
+div.descriptionBlue {  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: blue; 
+    padding: 40px 10px 0 10px; 
+    height: 100%;
+    width: 100%;
+}   
+
+div.descriptionGreen {  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: green;  
+    padding: 40px 10px 0 10px; 
+    height: 100%;
+    width: 100%;
+}  
+
+/******************************************
 /* LOCATIONS
 /*******************************************/
 
-#vicArea em {
-    color: aqua;
-    font-style: normal;
-    font-weight: 400;
+.fa-angle-down {
+    padding-left: 2px;
 }
 
-#victoria {
+.stateButton {
+    font-size: 1.1em;
+    color: #ffffff;
+    font-family: 'Arvo', serif;
+    height: 40px;
+    padding: 7px 40px 3px 40px;
+    border-radius: 3px;
+    background: #4e9c2c; 
+    border: 1px solid #ffffff;
+    margin:auto;
+    display:block;
+    float: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.stateButton:hover {
+    background: #acd29c;
+    color: #ffffff;
+    /*border: 1px solid #2c5785;*/
+}
+
+#albionClick {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+
+#vicArea strong {
+    color: #3fb909;
+    font-weight: 600;
+}
+
+#nswArea strong {
+    color: #3fb909;
+    font-weight: 600;
+}
+
+#victoria,
+#nsw {
     padding: 0 0 10px 0;
 }
 
-#vicArea {
+#vicArea,
+#nswArea {
     display: none;
-    padding: 0 0 10px 10px;
+    padding: 40px 0 10px 10px;
 }
 
-#albion {
-    display: none;
-    padding: 0 0 5px 0px;
-}
-
-#epping {
-    display: none;
-    padding: 0 0 5px 0px;
-}
-
-#hcross {
-    display: none;
-    padding: 0 0 5px 0px;
-}
-
-#kealba {
-    display: none;
-    padding: 0 0 5px 0px;
-}
-
-#lalor{
-    display: none;
-    padding: 0 0 5px 0px;
-    font-size: .95em;
-    line-height: 1.4em;
-}
-
-#preston {
-    display: none;
-    padding: 0 0 5px 0px;
-}
-
-#stAlbans {
-    display: none;
-    padding: 0 0 5px 0px;
-}
-
+#albion,
+#epping,
+#hcross,
+#kealba,
+#lalor,
+#preston,
+#stAlbans,
 #sunWest {
     display: none;
     padding: 0 0 5px 0px;
+    font-size: .92em;
+    line-height: 1.4em;
 }
+
+#rockdale,
+#liverpool,
+#casula {
+    display: none;
+    padding: 0 0 5px 0px;
+    font-size: .92em;
+    line-height: 1.4em;
+}
+
 
 /******************************************
 /* GRID SETTING
@@ -397,7 +514,7 @@ fieldset {
 
 .full-width {
     display: block;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 10px;
     /*border: 1px solid #ccc;*/
 }
 
@@ -436,7 +553,8 @@ fieldset {
 .two-quarters,
 .six-twelths {
     width: 50%;
-    padding: 0 10px 0 10px;
+    display: inline-block;
+    padding: 20px 10px 10px 10px;
 }
 
 .seven-twelths {
@@ -473,15 +591,40 @@ fieldset {
 /* SINGLE COLUMN RESPONSIVE MOBILE
 /*******************************************/
 
-@media only screen and (max-width: 1000px) {
-    body {
+@media screen and (max-width: 768px) {
+    
+.hamburger {
+    display: inline-block;
+    color: #033048;
+    padding: 3px 7px 3px 7px;
+    background: white;
+    float: left;
+    margin: 13px 0 14px 0;
+    cursor: pointer;
+} 
+    
+header nav ul li {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    font-size: .8em;
+}
+    
+.nav {clear:both;}
+    
+body {
         width: 100%;
     }
-    .four-twelths {
+.four-twelths {
         max-width: 100%;
     }
     
-@media only screen and (max-width: 600px) {
+header.grid {
+        padding 0;
+    }
+
+    
+    
+/*@media only screen and (max-width: 480px) {
         body {
             width: 100%;
         }
@@ -513,3 +656,4 @@ fieldset {
         footer p {
             font-size: .2em;
         }
+
