@@ -75,7 +75,7 @@ header {
     height: 50px;
     position: fixed;
     top: 0;
-    transition: top 0.3s ease-in-out;
+    transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 1000;
 
@@ -404,8 +404,10 @@ div.descriptionGreen {
 .stateButton {
     font-size: 1.1em;
     color: #ffffff;
+    text-align: center;
     font-family: 'Arvo', serif;
     height: 40px;
+    width: 200px;
     padding: 7px 40px 3px 40px;
     border-radius: 3px;
     background: #4e9c2c; 
@@ -605,7 +607,7 @@ div.descriptionGreen {
 
 @media screen and (max-width: 768px) {
     
-.hamburger {
+/*.hamburger {
     display: inline-block;
     color: #033048;
     padding: 3px 7px 3px 7px;
@@ -613,7 +615,7 @@ div.descriptionGreen {
     float: left;
     margin: 13px 0 14px 0;
     cursor: pointer;
-} 
+} */
     
 header nav ul li {
     display: inline-block;
@@ -628,12 +630,65 @@ body {
         max-width: 100%;
     }
     
-header > grid {
+header, grid {
         padding 0;
     }
+    
+.one-half {
+    display: block;
+    margin: 0 auto;
+    width:100%;
+    clear: both;
+        float: none;
 
+    }
+    
+.img {
+    width: 100%;
+    margin: 0 auto;
+
+    }
+    
+floatRight, floatLeft {
+    margin: 0 auto;
+    float: none;
+
+    }
+    
+div.wrapper{  
+    position: block; /* important(so we can absolutely position the description div */  
+    height:100%;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+ }
+    
+div.descriptionOrange {  
+    position: block; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: orange;  
+    padding: 40px 10px 0 10px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    
+ }
+    
+#enjoy {
+    background: url(../images/enjoy.jpg) no-repeat top center #131e27;
+    background-color: #ffffff;
+    padding: 70px 0 50px 0;
+    margin: 0 auto;
+    clear: both;
+}
     
     
+.kcSvg {
+    width: 40%;
+}
+
 /*@media only screen and (max-width: 480px) {
         body {
             width: 100%;

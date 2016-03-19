@@ -13,6 +13,13 @@ $(document).ready(function () {
 	}
 });
     
+    // when the window is resized reset nav to visible if closed on resize
+    $(window).resize(function(){
+	if(window.innerWidth < 768) {
+		$("nav").removeAttr("style");
+	}
+});
+    
 // hide header on scroll    
 var didScroll;
 var lastScrollTop = 0;
