@@ -72,6 +72,13 @@ p {
 header {
     background: #2c5785;
     overflow: hidden;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+
 }
 
 header .logo {
@@ -106,6 +113,11 @@ header nav ul li a:hover {
 .fixed {
     display: inline-block;
 }
+
+.navUp {
+    top: -60px;
+}
+
 
 #homeBacker {
     height: 500px;
@@ -439,23 +451,23 @@ div.descriptionGreen {
     padding: 40px 0 10px 10px;
 }
 
-#albion,
-#epping,
-#hcross,
-#kealba,
-#lalor,
-#preston,
-#stAlbans,
-#sunWest {
+.albion,
+.epping,
+.hcross,
+.kealba,
+.lalor,
+.preston,
+.stAlbans,
+.sunWest {
     display: none;
     padding: 0 0 5px 0px;
     font-size: .92em;
     line-height: 1.4em;
 }
 
-#rockdale,
-#liverpool,
-#casula {
+.rockdale,
+.liverpool,
+.casula {
     display: none;
     padding: 0 0 5px 0px;
     font-size: .92em;
@@ -608,9 +620,7 @@ header nav ul li {
     margin: 0 0 0 10px;
     font-size: .8em;
 }
-    
-.nav {clear:both;}
-    
+        
 body {
         width: 100%;
     }
@@ -618,7 +628,7 @@ body {
         max-width: 100%;
     }
     
-header.grid {
+header > grid {
         padding 0;
     }
 

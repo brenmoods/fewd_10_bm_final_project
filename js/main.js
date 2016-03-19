@@ -1,13 +1,58 @@
-//wait for the DOM elements to load before executing
+// wait for the DOM elements to load before executing
 $(document).ready(function () {
     
+// when hamburger characetr is clicked toggle menu    
     $('.hamburger').click(function(){ 
         $(this).next().slideToggle(); 
-        
-        });
+});
     
+// when the window is resized reset nav to visible if closed on resize
+    $(window).resize(function(){
+	if(window.innerWidth > 768) {
+		$("nav").removeAttr("style");
+	}
+});
     
+// hide header on scroll    
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $("header").outerHeight();
 
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+// make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+// if they scrolled down and are past the navbar, add class .navUp.
+// this is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        
+// scroll Down
+        $("header").removeClass("navDown").addClass("navUp");
+    } else {
+        
+// scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $("header").removeClass("navUp").addClass("navDown");
+        }
+    }
+    lastScrollTop = st;
+}
+    
     //href is clicked
     $('a[href^="#"]').on('click', function (e) {
 
@@ -34,7 +79,7 @@ $(document).ready(function () {
     
      //reset Victoria menu locations on second click
      $("#victoria").click(function(){
-        $("#albion, #epping, #hcross, #kealba, #lalor, #preston, #stAlbans, #sunWest").fadeOut();
+        $(".albion, .epping, .hcross, .kealba, .lalor, .preston, .stAlbans, .sunWest").fadeOut();
     });
     
     //on click id albion
@@ -42,42 +87,42 @@ $(document).ready(function () {
         //prevents default action of element - page scrolling back to top of page
         $e.preventDefault();
         //display / hide hidden id vicInfo with a fade toggle
-        $("#albion").fadeToggle();
+        $(".albion").fadeToggle();
     });
 
     $("#eppingClick").click(function ($e) {
         $e.preventDefault();
-        $("#epping").fadeToggle();
+        $(".epping").fadeToggle();
     });
 
     $("#hcrossClick").click(function ($e) {
         $e.preventDefault();
-        $("#hcross").fadeToggle();
+        $(".hcross").fadeToggle();
     });
 
     $("#kealbaClick").click(function ($e) {
         $e.preventDefault();
-        $("#kealba").fadeToggle();
+        $(".kealba").fadeToggle();
     });
 
     $("#lalorClick").click(function ($e) {
         $e.preventDefault();
-        $("#lalor").fadeToggle();
+        $(".lalor").fadeToggle();
     });
 
     $("#prestonClick").click(function ($e) {
         $e.preventDefault();
-        $("#preston").fadeToggle();
+        $(".preston").fadeToggle();
     });
 
     $("#stAlbansClick").click(function ($e) {
         $e.preventDefault();
-        $("#stAlbans").fadeToggle();
+        $(".stAlbans").fadeToggle();
     });
     
     $("#sunWestClick").click(function ($e) {
         $e.preventDefault();
-        $("#sunWest").fadeToggle();
+        $(".sunWest").fadeToggle();
     });
     
     
@@ -91,7 +136,7 @@ $(document).ready(function () {
     
      //reset nsw menu locations on second click
      $("#nsw").click(function(){
-        $("#rockdale, #liverpool, #casula").fadeOut();
+        $(".rockdale, .liverpool, .casula").fadeOut();
     });
     
     //on click id rockdale
@@ -99,17 +144,17 @@ $(document).ready(function () {
         //prevents default action of element - page scrolling back to top of page
         $e.preventDefault();
         //display / hide hidden id vicInfo with a fade toggle
-        $("#rockdale").fadeToggle();
+        $(".rockdale").fadeToggle();
     });
 
     $("#liverpoolClick").click(function ($e) {
         $e.preventDefault();
-        $("#liverpool").fadeToggle();
+        $(".liverpool").fadeToggle();
     });
 
     $("#casulaClick").click(function ($e) {
         $e.preventDefault();
-        $("#casula").fadeToggle();
+        $(".casula").fadeToggle();
     });
     
     
