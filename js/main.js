@@ -174,16 +174,16 @@ $(window).load(function(){
         $(this).css("opacity", 0);  
         
         // set width same as the image  
-        $(this).css("max-width, 100%", $(this).siblings("img").width()); 
+        $(this).css("width", $(this).siblings('img').width()); 
         
         // get the parent (the wrapper) and set it's width same as the image width  
-        $(this).parent().css("max-width, 100%", $(this).siblings("img").width());  
+        $(this).parent().css("width", $(this).siblings('img').width());   
         
        // set height same as the image  
-       $(this).css("max-height, 100%", $(this).siblings("img").height());
+       $(this).css("height", $(this).siblings("img").height());
         
         // get the parent (the wrapper) and set it's height same as the image height  
-       $(this).parent().css("max-height, 100%", $(this).siblings("img").height());  
+       $(this).parent().css("height", $(this).siblings("img").height());  
 
         // set the display to block  
         $(this).css("display", "block");  
@@ -193,7 +193,7 @@ $(window).load(function(){
         //when mouse hover over the wrapper div  
         //get it's children elements with class description  
         //and show it using fadeTo  
-        $(this).children(".descriptionOrange, .descriptionRed, .descriptionBlue, .descriptionGreen").stop().fadeTo(500, 0.7);  
+        $(this).children(".descriptionOrange, .descriptionRed, .descriptionBlue, .descriptionGreen").stop().fadeTo(500, 0.8);  
     },function(){  
         //when mouse out of the wrapper div  
         //use fadeTo to hide the div  

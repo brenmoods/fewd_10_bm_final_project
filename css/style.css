@@ -2,6 +2,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /* Box Model Hack */
 
@@ -128,25 +129,27 @@ header nav ul li a:hover {
 
 h1 {
     color: #2c5785;
-    font-family: 'Arvo', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 2.2em;
+    font-size: 2.4em;
     text-align: center;
     line-height: 1.6em;
+    text-transform: uppercase;
 }
 
 h2 {
     color: #2c5785;
-    font-family: 'Arvo', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: 1.8em;
+    text-transform: uppercase;
 }
 
 h3 {
     color: #348abb;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 h4 {
@@ -312,7 +315,10 @@ fieldset {
 
 div.wrapper{  
     position: relative; /* important(so we can absolutely position the description div */  
-    height:100%;
+    max-height:100%;
+    display: inline-block;
+    max-width:100%;
+        background-color: orange; 
 }
 
 .paddingBottom {
@@ -337,16 +343,17 @@ div.wrapper{
 }*/ 
 
 .chooseHeading {
-    font-size: 1.5em;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
     color: #ffffff;  
     padding-bottom: 8px;
+    text-transform: uppercase;
 }
 
 .chooseCopy {
-    font-size: .9em;
+    font-size: 1.1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-align: center;
@@ -357,40 +364,40 @@ div.descriptionOrange {
     position: absolute; /* absolute position (so we can position it where we want)*/  
     top: 0px; /* position will be on bottom */  
     display: none;
-    background-color: orange;  
-    padding: 40px 10px 0 10px;
-    height: 100%;
-    width: 100%;
+    background-color: #de7b05;  
+    padding: 60px 30px 0 30px;
+    max-height: 100%;
+    max-width: 100%;
 }  
 
 div.descriptionRed {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
     top: 0px; /* position will be on bottom */  
     display: none;
-    background-color: red; 
-    padding: 40px 10px 0 10px; 
-    height: 100%;
-    width: 100%;
+    background-color: #953939; 
+    padding: 60px 30px 0 30px; 
+    max-height: 100%;
+    max-width: 100%;
 }  
 
 div.descriptionBlue {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
     top: 0px; /* position will be on bottom */  
     display: none;
-    background-color: blue; 
-    padding: 40px 10px 0 10px; 
-    height: 100%;
-    width: 100%;
+    background-color: #4a7097; 
+    padding: 60px 30px 0 30px; 
+    max-height: 100%;
+    max-width: 100%;
 }   
 
 div.descriptionGreen {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
     top: 0px; /* position will be on bottom */  
     display: none;
-    background-color: green;  
-    padding: 40px 10px 0 10px; 
-    height: 100%;
-    width: 100%;
+    background-color: #357c15;  
+    padding: 60px 30px 0 30px; 
+    max-height: 100%;
+    max-width: 100%;
 }  
 
 /******************************************
@@ -639,7 +646,7 @@ header, grid {
     margin: 0 auto;
     width:100%;
     clear: both;
-        float: none;
+    float: none;
 
     }
     
@@ -657,24 +664,61 @@ floatRight, floatLeft {
     
 div.wrapper{  
     position: block; /* important(so we can absolutely position the description div */  
-    height:100%;
+    max-height: 100%;
+    max-width: 100%;
     margin: 0 auto;
     float: none;
     clear: both;
  }
     
 div.descriptionOrange {  
-    position: block; /* absolute position (so we can position it where we want)*/  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
     top: 0px; /* position will be on bottom */  
     display: none;
-    background-color: orange;  
-    padding: 40px 10px 0 10px;
-    height: 100%;
-    width: 100%;
+    background-color: #de7b05;  
+    padding: 40px 20px 0 20px;
+    max-height: 100%;
+    max-width: 100%;
     margin: 0 auto;
     clear: both;
-    
  }
+    
+div.descriptionRed {  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: #953939; 
+    padding: 40px 20px 0 20px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    clear: both;
+}  
+
+div.descriptionBlue {  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: #4a7097; 
+    padding: 40px 20px 0 20px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    clear: both;
+}   
+
+div.descriptionGreen {  
+    position: absolute; /* absolute position (so we can position it where we want)*/  
+    top: 0px; /* position will be on bottom */  
+    display: none;
+    background-color: #357c15;  
+    padding: 40px 20px 0 20px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    clear: both;
+}  
+
     
 #enjoy {
     background: url(../images/enjoy.jpg) no-repeat top center #131e27;
