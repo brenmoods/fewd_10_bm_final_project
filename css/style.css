@@ -315,9 +315,7 @@ fieldset {
 
 div.wrapper{  
     position: relative; /* important(so we can absolutely position the description div */  
-    max-height:100%;
     display: inline-block;
-    max-width:100%;
         background-color: orange; 
 }
 
@@ -327,12 +325,12 @@ div.wrapper{
     
 .floatRight {
     float: right;
-    right: 0px;  
+    width: 100%;
 }
 
 .floatLeft {
     float: left;
-    left: 0px;  
+    width: 100%;
 }
 
 /*div.description {  
@@ -362,22 +360,28 @@ div.wrapper{
 
 div.descriptionOrange {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;  
     display: none;
     background-color: #de7b05;  
-    padding: 60px 30px 0 30px;
-    max-height: 100%;
+    padding: 30px 30px 0 30px; 
     max-width: 100%;
+    margin: auto;
 }  
 
 div.descriptionRed {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;  
     display: none;
     background-color: #953939; 
-    padding: 60px 30px 0 30px; 
-    max-height: 100%;
+    padding: 30px 30px 0 30px; 
     max-width: 100%;
+    margin: auto;
 }  
 
 div.descriptionBlue {  
@@ -656,33 +660,40 @@ header, grid {
 
     }
     
-floatRight, floatLeft {
-    margin: 0 auto;
-    float: none;
-
-    }
-    
 div.wrapper{  
-    position: block; /* important(so we can absolutely position the description div */  
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+    position: relative; /* important(so we can absolutely position the description div */  
+    display: inline-block;
+    max-width:100%;
+        background-color: orange; 
+}
+
+.paddingBottom {
+    padding-bottom: 20px;
+}
+    
+.floatRight {
     float: none;
-    clear: both;
- }
+    width: 100%;
+}
+
+.floatLeft {
+    float: none;
+    width: 100%;
+}
     
 div.descriptionOrange {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;  
     display: none;
     background-color: #de7b05;  
-    padding: 40px 20px 0 20px;
-    max-height: 100%;
+    padding: 30px 30px 0 30px; 
     max-width: 100%;
-    margin: 0 auto;
-    clear: both;
- }
-    
+    margin: auto;
+}
+
 div.descriptionRed {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
     top: 0px; /* position will be on bottom */  
