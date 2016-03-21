@@ -179,17 +179,11 @@ $(window).load(function(){
         // get the parent (the wrapper) and set it's width same as the image width  
         $(this).parent().css("width", $(this).siblings('img').width());   
         
-       // set height same as the image  
-       $(this).css("height", $(this).siblings("img").height());
-        
-        // get the parent (the wrapper) and set it's height same as the image height  
-       $(this).parent().css("height", $(this).siblings("img").height());  
-
         // set the display to block  
         $(this).css("display", "block");  
     });  
   
-    $("div.wrapper").hover(function(){  
+    $(".wrapper").hover(function(){  
         //when mouse hover over the wrapper div  
         //get it's children elements with class description  
         //and show it using fadeTo  

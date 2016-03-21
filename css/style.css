@@ -1,7 +1,6 @@
 /* Font @ import */
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300);
-@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /* Box Model Hack */
@@ -88,7 +87,7 @@ header .logo {
 }
 
 header nav {
-    float: left;
+    float: right;
 }
 
 header nav ul li {
@@ -133,7 +132,7 @@ h1 {
     font-weight: 400;
     font-size: 2.4em;
     text-align: center;
-    line-height: 1.6em;
+    line-height: 1.2em;
     text-transform: uppercase;
 }
 
@@ -141,7 +140,7 @@ h2 {
     color: #2c5785;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 2em;
     text-transform: uppercase;
 }
 
@@ -164,13 +163,14 @@ h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
-    line-height: 1.2em;
+    line-height: 1.4em;
 }
 
 footer {
-    background: #c3dfea;
-    padding: 65px 0 45px;
-    text-align: center;
+    height: 147px;
+    background: url(../images/footer.jpg) no-repeat top center #131e27;
+    background-color: #ffffff;
+    background-size: cover;
 }
 
 footer ul li {
@@ -188,7 +188,7 @@ footer p {
 #tradition {
     background: url(../images/tradition.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 50px 0px 30px 0px;
+    padding: 120px 0px 60px 0px;
 }
 
 #tradition p {
@@ -213,7 +213,7 @@ footer p {
 #find {
     background: url(../images/map.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 10px 0 30px 0;
+    padding: 40px 0 80px 0;
 }
 
 #find p {
@@ -234,7 +234,8 @@ footer p {
 }
 
 .copyright {
-        font-size: 40em;
+        font-size: 1em;
+    padding-top: 20px;
 }
 
 form {
@@ -251,13 +252,18 @@ form {
     padding: 0 4px 4px 0;
 }
 
+.whiteLine {
+    border-bottom: 2px solid #ffffff;
+    opacity: 0.3;
+}
+
 .grid,
 .fullwidth {
     padding: 0 40px 0 40px;
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
 }
 
 .kcSvg {
@@ -271,8 +277,8 @@ img {
 .submitButton {
     font-size: 1.1em;
     color: #348abb;
-    font-family: 'Arvo', serif;
-    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
     padding: 5px 40px 5px 40px;
     border-radius: 3px;
     background: #ffffff; 
@@ -280,6 +286,7 @@ img {
     margin:auto;
     display:block;
     float: left;
+    text-transform: uppercase;
 }
 
 .submitButton:hover {
@@ -313,10 +320,13 @@ fieldset {
 /* CHEESE CHOOSER
 /*******************************************/
 
-div.wrapper{  
+
+.wrapper {  
     position: relative; /* important(so we can absolutely position the description div */  
-    display: inline-block;
-        background-color: orange; 
+    max-height:100%;
+    max-width:100%;
+    background-color: orange;
+
 }
 
 .paddingBottom {
@@ -325,12 +335,12 @@ div.wrapper{
     
 .floatRight {
     float: right;
-    width: 100%;
+    right: 0px;  
 }
 
 .floatLeft {
     float: left;
-    width: 100%;
+    left: 0px;  
 }
 
 /*div.description {  
@@ -341,7 +351,7 @@ div.wrapper{
 }*/ 
 
 .chooseHeading {
-    font-size: 2em;
+    font-size: 2em !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
@@ -354,52 +364,60 @@ div.wrapper{
     font-size: 1.1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    line-height: 1.4em;
     text-align: center;
     color: #ffffff;  
+    padding: 15px 25px 0 25px;
 }
 
 div.descriptionOrange {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px;
+    top: 0;
     bottom: 0;
     right: 0;
-    left: 0;  
+    left: 0;
     display: none;
     background-color: #de7b05;  
-    padding: 30px 30px 0 30px; 
+    padding: 20px 30px 0 30px;
+    max-height: 100%;
     max-width: 100%;
-    margin: auto;
 }  
 
 div.descriptionRed {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px;
+    top: 0;
     bottom: 0;
     right: 0;
-    left: 0;  
+    left: 0;
     display: none;
     background-color: #953939; 
-    padding: 30px 30px 0 30px; 
+    padding: 20px 30px 0 30px; 
+    max-height: 100%;
     max-width: 100%;
-    margin: auto;
 }  
 
 div.descriptionBlue {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: none;
     background-color: #4a7097; 
-    padding: 60px 30px 0 30px; 
+    padding: 20px 30px 0 30px; 
     max-height: 100%;
     max-width: 100%;
 }   
 
 div.descriptionGreen {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     display: none;
     background-color: #357c15;  
-    padding: 60px 30px 0 30px; 
+    padding: 20px 30px 0 30px; 
     max-height: 100%;
     max-width: 100%;
 }  
@@ -416,10 +434,11 @@ div.descriptionGreen {
     font-size: 1.1em;
     color: #ffffff;
     text-align: center;
-    font-family: 'Arvo', serif;
-    height: 40px;
-    width: 200px;
-    padding: 7px 40px 3px 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    height: 50px;
+    width: 210px;
+    padding: 14px 40px 3px 40px;
     border-radius: 3px;
     background: #4e9c2c; 
     border: 1px solid #ffffff;
@@ -434,13 +453,6 @@ div.descriptionGreen {
     background: #acd29c;
     color: #ffffff;
     /*border: 1px solid #2c5785;*/
-}
-
-#albionClick {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.1em;
-    line-height: 1.2em;
 }
 
 #vicArea strong {
@@ -473,7 +485,7 @@ div.descriptionGreen {
 .stAlbans,
 .sunWest {
     display: none;
-    padding: 0 0 5px 0px;
+    padding: 0 0 10px 0px;
     font-size: .92em;
     line-height: 1.4em;
 }
@@ -657,43 +669,37 @@ header, grid {
 .img {
     width: 100%;
     margin: 0 auto;
+    font-size: 16px;
+
+    }
+    
+floatRight, floatLeft {
+    margin: 0 auto;
+    float: none;
 
     }
     
 div.wrapper{  
-    position: relative; /* important(so we can absolutely position the description div */  
-    display: inline-block;
-    max-width:100%;
-        background-color: orange; 
-}
-
-.paddingBottom {
-    padding-bottom: 20px;
-}
-    
-.floatRight {
+    position: block; /* important(so we can absolutely position the description div */  
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     float: none;
-    width: 100%;
-}
-
-.floatLeft {
-    float: none;
-    width: 100%;
-}
+    clear: both;
+ }
     
 div.descriptionOrange {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px;
-    bottom: 0;
-    right: 0;
-    left: 0;  
+    top: 0px; /* position will be on bottom */  
     display: none;
     background-color: #de7b05;  
-    padding: 30px 30px 0 30px; 
+    padding: 40px 20px 0 20px;
+    max-height: 100%;
     max-width: 100%;
-    margin: auto;
-}
-
+    margin: 0 auto;
+    clear: both;
+ }
+    
 div.descriptionRed {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
     top: 0px; /* position will be on bottom */  
