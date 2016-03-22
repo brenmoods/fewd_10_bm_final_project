@@ -2,9 +2,9 @@
 $(document).ready(function () {
     
 // when hamburger characetr is clicked toggle menu    
-    $('.hamburger').click(function(){ 
-        $(this).next().slideToggle(); 
-});
+//    $('.hamburger').click(function(){ 
+//        $(this).next().slideToggle(); 
+//});
     
 // when the window is resized reset nav to visible if closed on resize
     $(window).resize(function(){
@@ -192,6 +192,7 @@ $(window).load(function(){
         //when mouse out of the wrapper div  
         //use fadeTo to hide the div  
         $(this).children(".descriptionOrange, .descriptionRed, .descriptionBlue, .descriptionGreen").stop().fadeTo(500, 0);  
+    
     });  
     
 }); 
