@@ -142,7 +142,7 @@ h2 {
     color: #2c5785;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 2.2em;
+    font-size: 1.9em;
     line-height: 2.2em;
     text-transform: uppercase;
     text-align: left;
@@ -214,7 +214,7 @@ footer p {
 #enjoy {
     background: url(../images/enjoy.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 30px 0px 60px 0px;
+    padding: 30px 0px 10px 0px;
     display: block;
 }
 
@@ -227,12 +227,13 @@ footer p {
 
 #enjoy h2 {
     text-align: left;
+    padding-top: 10px;
 }
 
 #find {
     background: url(../images/map.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 20px 0 80px 0;
+    padding: 20px 0 40px 0;
 }
 
 #find p {
@@ -293,6 +294,16 @@ form {
     opacity: 0.3;
 }
 
+.contactLine {
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    display: none;
+}
+
 .grid,
 .fullwidth {
     padding: 0 40px 0 40px;
@@ -348,13 +359,14 @@ fieldset {
     width: 100%;
     height: 30px;
     margin-bottom: 10px;
+    padding: 5px;
 }
 
 .text1 {
     width: 100%;
     border: 0;
     height: 200px;
-    padding: 10px 10px 10px 10px;
+    padding: 5px;
     resize: none;
 }
 
@@ -404,10 +416,10 @@ fieldset {
 }
 
 .chooseLogo {
-    width: 25%;
-    opacity: 0.6;
+    width: 40%;
+    opacity: 0.4;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 10px;
 }       
 
 div.descriptionOrange {  
@@ -541,6 +553,14 @@ div.descriptionGreen {
     line-height: .7em;
 }
 
+#find h3 {
+    color: #317811;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
 /******************************************
 /* GRID SETTING
 /*******************************************/
@@ -616,15 +636,15 @@ header nav ul li {
 }
         
 body {
-        width: 100%;
+    width: 100%;
 }
 
 .four-twelths {
-        max-width: 100%;
+    max-width: 100%;
 }
     
 header, grid {
-        padding 0;
+    padding 0;
 }
     
 .one-half {
@@ -651,7 +671,7 @@ header, grid {
 }
     
 #enjoy {
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px 10px 0px;
     display: block;
     margin: 0 auto;
     clear: both;
@@ -663,7 +683,7 @@ header, grid {
 }
     
 #find {
-    padding: 40px 0 80px 0;
+    padding: 40px 0 20px 0;
 }
     
 #find p {
@@ -672,12 +692,12 @@ header, grid {
 
 #find h2 {
     text-align: left;
+    padding-bottom: 20px;
 }
     
 fieldset {
     padding-top: 20px;
 }
-
 
 h2 {
     color: #2c5785;
@@ -741,7 +761,7 @@ floatRight, floatLeft {
 }
     
 #contact {
-    padding: 40px 0 40px 0;
+    padding: 40px 0 10px 0;
 }
 
 #contact p {
@@ -752,6 +772,7 @@ floatRight, floatLeft {
 
 #contact h2 {
     text-align: left;
+    padding-top: 0;
 }
     
 #enjoy .chooseHeading h3 {
@@ -767,10 +788,10 @@ floatRight, floatLeft {
 }
 
 .chooseLogo {
-    width: 25%;
-    opacity: 0.6;
+    width: 40%;
+    opacity: 0.4;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 15px;
 }     
 
 div.wrapper{  
@@ -820,50 +841,31 @@ div.descriptionGreen {
     
 #victoria,
 #nsw {
-    padding: 20px 0 20px 0;
+    padding: 10px 0 40px 0;
 }
     
 .kcSvg {
     width: 40%;
     padding-top: 20px;
+    padding-bottom: 10px;
 }
     
 .facebook {
-    padding-top: 10px;
+    padding-top: 20px;
+}
+    
+.contactLine {
+    margin: 0 auto;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    display: block;
+    padding: 20px 0 0 0;
 }
     
 .grid,
 .fullwidth {
-    padding: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
 }
-
-    
-/*@media only screen and (max-width: 480px) {
-        body {
-            width: 100%;
-        }
-        .container {
-            width: 100%;
-        }
-        header nav ul li {
-            display: inline-block;
-            margin: 0 10px 0 10px;
-            font-size: .9em;
-        }
-        #home {
-            height: 460px;
-            padding-top: 10px;
-            width: 100%;
-        }
-        #home h2 {
-            font-size: 1.5em;
-            text-align: center;
-            margin: 80px 0 60px;
-            margin-left: 10%;
-            margin-right: 10%
-        }
-        h3 {}
-        footer p {
-            font-size: .2em;
-        }
-
