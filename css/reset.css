@@ -29,11 +29,11 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: .8;
 }
 ol, ul {
 	list-style: none;
-}
+}  s
 blockquote, q {
 	quotes: none;
 }

@@ -41,6 +41,13 @@
     /* note the padding around a left floated image */
 }
 
+html { 
+    font-size: 100%;
+    overflow-y: scroll; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
@@ -60,14 +67,19 @@ p {
     line-height: 1.4em;
 }
 
+.visuallyhidden { 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; }
+
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-.logo {
-    font-size: 48px;
-    font-weight: 800;
-}
 
 header {
     background: #2c5785;
@@ -78,12 +90,6 @@ header {
     transition: top 0.2s ease-in-out;
     width: 100%;
     z-index: 1000;
-
-}
-
-header .logo {
-    color: #ffffff;
-    float: left;
 }
 
 header nav {
@@ -92,13 +98,14 @@ header nav {
 
 header nav ul li {
     display: inline-block;
-    margin: 0 0 0 11px;
-    font-size: 1em;
+    margin: 0 0 0 12px;
+    padding-top: 18px;
 }
 
 header nav ul li a {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
 }
 
 header nav ul li a:hover {
@@ -106,18 +113,13 @@ header nav ul li a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-.hamburger {
+/*.hamburger {
     display: none;
-}
-
-.fixed {
-    display: inline-block;
-}
+}*/
 
 .navUp {
-    top: -60px;
+    top: -50px;
 }
-
 
 #homeBacker {
     height: 500px;
@@ -132,7 +134,7 @@ h1 {
     font-weight: 400;
     font-size: 2.4em;
     text-align: center;
-    line-height: 1.2em;
+    line-height: 2em;
     text-transform: uppercase;
 }
 
@@ -140,8 +142,10 @@ h2 {
     color: #2c5785;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 2em;
+    font-size: 2.2em;
+    line-height: 2.2em;
     text-transform: uppercase;
+    text-align: left;
 }
 
 h3 {
@@ -149,6 +153,7 @@ h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.4em;
+    line-height: 2em;
 }
 
 h4 {
@@ -156,6 +161,7 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
+    line-height: 1.8em;
 }
 
 h5 {
@@ -163,7 +169,7 @@ h5 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
-    line-height: 1.4em;
+    line-height: 2em;
 }
 
 footer {
@@ -188,11 +194,18 @@ footer p {
 #tradition {
     background: url(../images/tradition.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 120px 0px 60px 0px;
+    padding: 60px 40px 60px 0px;
+    display: block;
+    margin: auto 0;
+}
+
+#tradition, h2 {
+    text-align: center;
 }
 
 #tradition p {
     font-size: 1.3em;
+    line-height: 1.4;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -201,30 +214,41 @@ footer p {
 #enjoy {
     background: url(../images/enjoy.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 70px 0 50px 0;
+    padding: 30px 0px 60px 0px;
+    display: block;
 }
 
 #enjoy p {
     font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    text-align: left;
+}
+
+#enjoy h2 {
+    text-align: left;
 }
 
 #find {
     background: url(../images/map.jpg) no-repeat top center #131e27;
     background-color: #ffffff;
-    padding: 40px 0 80px 0;
+    padding: 20px 0 80px 0;
 }
 
 #find p {
     font-size: 1.2em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    text-align: left;
+}
+
+#find h2 {
+    text-align: left;
 }
 
 #contact {
     background-color: #f8f3e4;
-    padding: 10px 0 40px 0;
+    padding: 20px 0 40px 0;
 }
 
 #contact p {
@@ -233,8 +257,20 @@ footer p {
     font-weight: 400;
 }
 
+#contact h2 {
+    text-align: left;
+}
+
+.required {
+    color: #348abb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: .8em;
+    line-height: 1.8em;
+}
+
 .copyright {
-        font-size: 1em;
+    font-size: 1em;
     padding-top: 20px;
 }
 
@@ -268,6 +304,11 @@ img {
 
 .kcSvg {
     width: 50%;
+    padding-bottom: 30px;
+}
+
+.facebook {
+    padding-top: 20px;
 }
 
 .submit {
@@ -298,6 +339,7 @@ img {
 fieldset {
     border: 0;
     width:100%;
+    padding-top: 30px;
 }
 
 #name,
@@ -320,13 +362,10 @@ fieldset {
 /* CHEESE CHOOSER
 /*******************************************/
 
-
 .wrapper {  
     position: relative; /* important(so we can absolutely position the description div */  
     max-height:100%;
     max-width:100%;
-    background-color: orange;
-
 }
 
 .paddingBottom {
@@ -343,32 +382,33 @@ fieldset {
     left: 0px;  
 }
 
-/*div.description {  
-    position:absolute; /* absolute position (so we can position it where we want) 
-  /*  top: 0px; /* position will be on bottom  
-    display: none;
-    background-color: orange; 
-}*/ 
-
-.chooseHeading {
-    font-size: 2em !important;
+#enjoy .chooseHeading h3 {
+    font-size: 1.7em;
+    line-height: 1.3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
     color: #ffffff;  
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     text-transform: uppercase;
 }
 
-.chooseCopy {
-    font-size: 1.1em;
+#enjoy .chooseCopy p {
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    line-height: 1.4em;
+    line-height: 1.2em;
     text-align: center;
     color: #ffffff;  
-    padding: 15px 25px 0 25px;
+    padding: 5px 20px 0 20px;
 }
+
+.chooseLogo {
+    width: 25%;
+    opacity: 0.6;
+    margin: 0 auto;
+    padding-top: 20px;
+}       
 
 div.descriptionOrange {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
@@ -378,7 +418,7 @@ div.descriptionOrange {
     left: 0;
     display: none;
     background-color: #de7b05;  
-    padding: 20px 30px 0 30px;
+    padding: 20px 20px 0 20px;
     max-height: 100%;
     max-width: 100%;
 }  
@@ -438,7 +478,7 @@ div.descriptionGreen {
     text-transform: uppercase;
     height: 50px;
     width: 210px;
-    padding: 14px 40px 3px 40px;
+    padding: 18px 40px 3px 40px;
     border-radius: 3px;
     background: #4e9c2c; 
     border: 1px solid #ffffff;
@@ -467,7 +507,7 @@ div.descriptionGreen {
 
 #victoria,
 #nsw {
-    padding: 0 0 10px 0;
+    padding: 20px 0 20px 0;
 }
 
 #vicArea,
@@ -483,22 +523,23 @@ div.descriptionGreen {
 .lalor,
 .preston,
 .stAlbans,
-.sunWest {
+.sunWest,
+.blank > p {
     display: none;
     padding: 0 0 10px 0px;
-    font-size: .92em;
-    line-height: 1.4em;
+    font-size: .8em;
+    line-height: .7em;
 }
 
 .rockdale,
 .liverpool,
-.casula {
+.casula,
+.blank > p {
     display: none;
-    padding: 0 0 5px 0px;
-    font-size: .92em;
-    line-height: 1.4em;
+    padding: 0 0 10px 0px;
+    font-size: .8em;
+    line-height: .7em;
 }
-
 
 /******************************************
 /* GRID SETTING
@@ -524,26 +565,9 @@ div.descriptionGreen {
 
 .full-width,
 .one-half,
-.one-quarter,
 .two-quarters,
-.three-quarters,
-.one-third,
-.two-thirds,
-.one-fifth,
-.two-fifths,
-.three-fifths,
-.four-fifths,
-.one-twelth,
-.two-twelths,
-.three-twelths,
-.four-twelths,
-.five-twelths,
-.six-twelths,
-.seven-twelths,
-.eight-twelths,
-.nine-twelths,
-.ten-twelths,
-.eleven-twelths {
+.four-twelths
+ {
     display: inline-block;
     vertical-align: top;
     /*border: 1px solid #ccc;*/
@@ -555,35 +579,10 @@ div.descriptionGreen {
     /*border: 1px solid #ccc;*/
 }
 
-.one-twelth {
-    width: 1%;
-}
-
-.two-twelths {
-    width: 16.66667%;
-}
-
-.one-fifth {
-    width: 20%;
-}
-
-.one-quarter,
-.three-twelths {
-    width: 25%;
-}
-
 .four-twelths {
     width: 33.3%;
     display: inline-block;
     padding: 0 10px 0 10px;
-}
-
-.two-fifths {
-    width: 40%;
-}
-
-.five-twelths {
-    width: 41.66667%;
 }
 
 .one-half,
@@ -591,37 +590,7 @@ div.descriptionGreen {
 .six-twelths {
     width: 50%;
     display: inline-block;
-    padding: 20px 10px 10px 10px;
-}
-
-.seven-twelths {
-    width: 58.33333%;
-}
-
-.three-fifths {
-    width: 60%;
-}
-
-.two-thirds,
-.eight-twelths {
-    width: 66.66667%;
-}
-
-.three-quarters,
-.nine-twelths {
-    width: 75%;
-}
-
-.four-fifths {
-    width: 80%;
-}
-
-.ten-twelths {
-    width: 83.33333%;
-}
-
-.eleven-twelths {
-    width: 91.66667%;
+    padding: 10px 10px 10px 10px;
 }
 
 /******************************************
@@ -643,19 +612,20 @@ div.descriptionGreen {
 header nav ul li {
     display: inline-block;
     margin: 0 0 0 10px;
-    font-size: .8em;
+    font-size: .9em;
 }
         
 body {
         width: 100%;
-    }
+}
+
 .four-twelths {
         max-width: 100%;
-    }
+}
     
 header, grid {
         padding 0;
-    }
+}
     
 .one-half {
     display: block;
@@ -663,22 +633,146 @@ header, grid {
     width:100%;
     clear: both;
     float: none;
+}
+    
+#homeBacker {
+    height: 300px;
+    background: url(../images/header_small.jpg) no-repeat top center #131e27;
+    background-color: #ffffff;
+    background-size: cover;
+}
+    
+#tradition {
+    background: url(../images/tradition.jpg) no-repeat top center #131e27;
+    background-color: #ffffff;
+    padding: 30px 20px 40px 20px;
+    display: block;
+    margin: auto 0;
+}
+    
+#enjoy {
+    padding: 40px 0px 40px 0px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+    
+#enjoy p {
+    font-size: 1.1em;
+    padding-top: 20px;
+}
+    
+#find {
+    padding: 40px 0 80px 0;
+}
+    
+#find p {
+    font-size: 1.1em;
+}
 
-    }
+#find h2 {
+    text-align: left;
+}
+    
+fieldset {
+    padding-top: 20px;
+}
+
+
+h2 {
+    color: #2c5785;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+h4 {
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+h5 {
+    font-size: 1.05em;
+    line-height: 1.8em;
+}
+
+footer {
+    height: 110px;
+    background: url(../images/footer.jpg) no-repeat top center #131e27;
+    background-size: cover;
+}
     
 .img {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
-    font-size: 16px;
-
-    }
+}
     
 floatRight, floatLeft {
     margin: 0 auto;
     float: none;
-
-    }
+}
     
+#tradition {
+    background: url(../images/tradition.jpg) no-repeat top center #131e27;
+    background-color: #ffffff;
+    padding: 40px 40px 40px 0px;
+    display: block;
+    margin: auto 0;
+}
+
+#tradition h2 {
+    text-align: center;
+}
+
+#tradition p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding-top: 20px;
+}
+    
+#contact {
+    padding: 40px 0 40px 0;
+}
+
+#contact p {
+    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+#contact h2 {
+    text-align: left;
+}
+    
+#enjoy .chooseHeading h3 {
+    font-size: 1.3em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+#enjoy .chooseCopy p {
+    font-size: 1em;
+    line-height: 1.3em;
+    padding: 5px 20px 0 20px;
+}
+
+.chooseLogo {
+    width: 25%;
+    opacity: 0.6;
+    margin: 0 auto;
+    padding-top: 20px;
+}     
+
 div.wrapper{  
     position: block; /* important(so we can absolutely position the description div */  
     max-height: 100%;
@@ -690,10 +784,7 @@ div.wrapper{
     
 div.descriptionOrange {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
-    display: none;
-    background-color: #de7b05;  
-    padding: 40px 20px 0 20px;
+    padding: 22px 20px 0 20px;
     max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -702,10 +793,7 @@ div.descriptionOrange {
     
 div.descriptionRed {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
-    display: none;
-    background-color: #953939; 
-    padding: 40px 20px 0 20px;
+    padding: 22px 20px 0 20px;
     max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -714,10 +802,7 @@ div.descriptionRed {
 
 div.descriptionBlue {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
-    display: none;
-    background-color: #4a7097; 
-    padding: 40px 20px 0 20px;
+    padding: 22px 20px 0 20px;
     max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
@@ -726,40 +811,39 @@ div.descriptionBlue {
 
 div.descriptionGreen {  
     position: absolute; /* absolute position (so we can position it where we want)*/  
-    top: 0px; /* position will be on bottom */  
-    display: none;
-    background-color: #357c15;  
-    padding: 40px 20px 0 20px;
+    padding: 22px 20px 0 20px;
     max-height: 100%;
     max-width: 100%;
     margin: 0 auto;
     clear: both;
 }  
-
     
-#enjoy {
-    background: url(../images/enjoy.jpg) no-repeat top center #131e27;
-    background-color: #ffffff;
-    padding: 70px 0 50px 0;
-    margin: 0 auto;
-    clear: both;
+#victoria,
+#nsw {
+    padding: 20px 0 20px 0;
 }
-    
     
 .kcSvg {
     width: 40%;
+    padding-top: 20px;
+}
+    
+.facebook {
+    padding-top: 10px;
+}
+    
+.grid,
+.fullwidth {
+    padding: 0 20px 0 20px;
 }
 
+    
 /*@media only screen and (max-width: 480px) {
         body {
             width: 100%;
         }
         .container {
             width: 100%;
-        }
-        .logo {
-            font-size: 1.5em;
-            margin-left: 8%
         }
         header nav ul li {
             display: inline-block;
