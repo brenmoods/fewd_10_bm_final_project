@@ -370,6 +370,65 @@ fieldset {
     resize: none;
 }
 
+.confirm {
+    margin-top: 20px;
+    display: none;
+    /*border: 2px solid green;*/
+    border-radius: 2px;
+    padding: 10px 20px 10px 15px;
+    background: white;
+    overflow: scroll;
+    white-space: normal;
+}
+
+#contact .confirm p {
+    font-size: .9em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-bottom: 4px
+}
+
+#contact .confirm h3 {
+    color: #2c5785;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+#contact .confirm h4 {
+    color: #2c5785;
+    padding-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+#contact .confirm h5 {
+    color: #348abb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+
+
+#contact label {
+    display: block;
+    margin: 5px 0 5px 0;
+    color: #348abb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+label.required:after {
+    content: "";
+}
+
 /******************************************
 /* CHEESE CHOOSER
 /*******************************************/
@@ -774,6 +833,44 @@ floatRight, floatLeft {
     text-align: left;
     padding-top: 0;
 }
+    
+    
+.confirm {
+    margin-top: 20px;
+    display: none;
+    /*border: 2px solid green;*/
+    border-radius: 2px;
+    padding: 10px 20px 10px 15px;
+    background: white;
+}
+
+#contact .confirm p {
+    font-size: .9em;
+    line-height: 1.2em;
+    margin-bottom: 4px
+}
+
+#contact .confirm h3 {
+    font-size: .9em;
+    line-height: 1.9em;
+}
+
+#contact .confirm h4 {
+    font-size: .9em;
+    line-height: 1.9em;
+}
+
+#contact .confirm h5 {
+    font-size: .9em;
+    line-height: 1.8em;
+}
+
+#contact label {
+    margin: 5px 0 5px 0;
+    font-size: 1em;
+    line-height: 1.6em;
+}
+    
     
 #enjoy .chooseHeading h3 {
     font-size: 1.3em;

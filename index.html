@@ -57,8 +57,7 @@
             <div class="grid">
                 <div class="full-width">
                     <h2>Enjoy</h2>
-
-                    <p>Bieno Cheese is available in these stores throughout Victoria and NSW. Click a state and then a location nearest to you to find a King Cheese stockist.</p>
+                    <p>Bieno Cheese is a firm bodied, mild cheese perfect for any occassion. It is made from fresh pasturised milk and all natural ingredients. It is cured in a drying room and the allowed to age in brine to produce the distinctive holes it is known for. It is versatile and can be eaten by iself or as the perfect complement to any meal.</p>
                     <div class="paddingBottom"></div>
                 </div>
             </div>
@@ -243,24 +242,41 @@
                 <div class="one-half">
                     <h3>Contact form</h3>
                     <p>Please complete the form below to get in touch with King Cheese.</p>
-                    <form>
+                    <form autocomplete="off" method="post" action="">
                         <fieldset>
-                            <h4>Name <span class="required">(required)</span></h4>
-                            <input type="text" id="name" required>
+                            <label for="name" class="required">Name <span class="required">(required)</span></label>
+                            <input type="text" id="name" name="name" required>
 
-                            <h4>Email <span class="required">(required)</span></h4>
-                            <input type="text" id="email" required>
+                            <label for="email" class="required">Email <span class="required">(required)</span></label>
+                            <input type="email" id="email" name="email" required>
 
-                            <h4>Your message</h4>
-                            <textarea class="text1" name="text1" rows="4" cols="50"></textarea>
+                            <label for="message" class="required">Your message</label>
+                            <textarea class="text1" id="message" name="text1" rows="4" cols="50" required></textarea>
 
                             <div class="submitMargin">
-                            <input class="submitButton" type="button" name="submit" value="Submit" />
+                            <input class="submitButton" type="submit" name="submit" value="Submit" />
                             </div>
                         </fieldset>
                     </form>
+                    
+                <div class="confirm">
+            <h3>Thanks for contacting King Cheese!</h3>
+            <p>We will get back to you shortly.</p>
+            <div class="dottedLine"></div>        
+            
+            <h4>Your message:</h4>
+            <h5>Name:</h5>
+            <p id="nameVal"></p>
+            <h5>Email: </h5>
+            <p id="emailVal"></p>
+            <h5>Your message: </h5>
+            <p id="messageVal"></p>
+
+        </div>
+
                 </div>
             </div>
+            
         </section>
 
         <footer>

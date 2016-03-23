@@ -195,5 +195,29 @@ $(window).load(function(){
     
     });  
     
+    // contact form submit function
+    
+    $( 'form' ).on( 'submit', function( event ) {
+        event.preventDefault();
+        
+        // collect all the inputted values and add them to my confirm
+        
+        $('.confirm #nameVal').append($('#name').val());
+        $('.confirm #emailVal').append($('#email').val());
+        $('.confirm #messageVal').append($('#message').val());
+
+        /* 
+         * because checkboxes allow multiple choices, I'm going to select all
+         * checkboxes and iterate over them with jQuer each function to get
+         * each value
+         */
+
+        // fade out the form and fade in the thanks
+        $(this).fadeOut(function() {
+            // fade confirm in when fadeOut complete
+            $(".confirm").fadeIn();
+        });
+                });
+
 }); 
 });
