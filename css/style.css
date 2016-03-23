@@ -200,13 +200,13 @@ footer p {
 }
 
 #tradition, h2 {
-    text-align: center;
+    text-align: left;
 }
 
 #tradition p {
     font-size: 1.3em;
     line-height: 1.4;
-    text-align: center;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
@@ -742,6 +742,10 @@ header, grid {
     padding-top: 20px;
 }
     
+#enjoy h2 {
+    font-size: 1.5em;
+}
+    
 #find {
     padding: 40px 0 20px 0;
 }
@@ -753,6 +757,7 @@ header, grid {
 #find h2 {
     text-align: left;
     padding-bottom: 20px;
+    font-size: 1.5em;
 }
     
 fieldset {
@@ -808,13 +813,14 @@ floatRight, floatLeft {
 }
 
 #tradition h2 {
-    text-align: center;
+    text-align: left;
+    font-size: 1.5em;
 }
 
 #tradition p {
     font-size: 1.2em;
     line-height: 1.4;
-    text-align: center;
+    text-align: left;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     padding-top: 20px;
@@ -833,6 +839,7 @@ floatRight, floatLeft {
 #contact h2 {
     text-align: left;
     padding-top: 0;
+    font-size: 1.5em;
 }
     
 .confirm {
